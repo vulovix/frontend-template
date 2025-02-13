@@ -39,44 +39,44 @@ module.exports = {
           'error',
           {
             name: 'reselect',
-            message: 'Please use `@service` instead.',
+            message: 'Please use `libs/slice` instead.',
           },
           {
             name: 'react-redux',
-            message: 'Please use `@service` instead.',
+            message: 'Please use `libs/slice` instead.',
           },
           {
             name: 'redux-injectors',
-            message: 'Please use `@service` instead.',
+            message: 'Please use `libs/slice` instead.',
           },
           {
             name: '@reduxjs/toolkit',
-            message: 'Please use `@service` instead.',
+            message: 'Please use `libs/slice` instead.',
           },
           {
             name: 'redux-saga',
-            message: 'Please use `@repository` instead.',
+            message: 'Please use `libs/saga` instead.',
           },
           {
             name: 'redux-saga/effects',
-            message: 'Please use `@repository` instead.',
+            message: 'Please use `libs/saga` instead.',
           },
           {
             name: 'react-intl',
-            message: 'Please use `@translations` instead.',
+            message: 'Please use `libs/translations` instead.',
           },
           {
             name: '@reactoso-intl',
-            message: 'Please use `@translations` instead.',
+            message: 'Please use `packages/translations` instead.',
           },
           {
             name: '@reactoso-redux',
-            message: 'Please use `@service` instead.',
+            message: 'Please use `packages/slice` instead.',
           },
           {
             name: '@reactoso-saga',
-            message: 'Please use `@repository` instead.',
-          }
+            message: 'Please use `packages/saga` instead.',
+          },
         ],
         'linebreak-style': ['error', 'unix'],
         'react/prop-types': 'off',

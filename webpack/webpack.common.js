@@ -9,11 +9,6 @@ const config = {
       '@reactoso-intl': path.resolve('src/packages/intl'),
       '@reactoso-request': path.resolve('src/packages/request'),
 
-      '@service': path.resolve('src/core/service'),
-      '@repository': path.resolve('src/core/repository'),
-      '@translations': path.resolve('src/core/translations'),
-
-      '@pages': path.resolve('src/app/pages'),
       '@providers': path.resolve('src/app/providers'),
       '@components': path.resolve('src/app/components'),
       '@implementation': path.resolve('src/app/implementation'),

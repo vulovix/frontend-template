@@ -3,12 +3,12 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react';
 
-import { ThemeProvider } from '@providers/Theme';
-import { ReduxProvider } from '@service';
-import { IntlProvider, defaultLocale, translationMessages } from '@translations';
-import setupStore from 'core/service/setupStore';
+import { ThemeProvider } from 'providers/Theme';
+import { ReduxProvider } from 'libs/slice';
+import { IntlProvider, defaultLocale, translationMessages } from 'libs/translations';
+import setupStore from 'libs/slice/setupStore';
 
-import App from './app';
+import App from './App';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement!);

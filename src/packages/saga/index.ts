@@ -1,4 +1,3 @@
-/* eslint-disable no-restricted-imports */
 export { takeLatest, call, put } from 'redux-saga/effects';
 
 export { useInjectSaga as useSaga } from 'redux-injectors';

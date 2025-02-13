@@ -32,17 +32,12 @@ export function configureAppStore(rootServices = {}, options: any) {
 
   const store = configureStore({
     reducer: persistableReducer,
-    // middleware: (getDefaultMiddleware) => [
-    //   ...getDefaultMiddleware({
-    //     serializableCheck: {
-    //       ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-    //     },
-    //   }),
-    //   ...middlewares,
-    // ],
     middleware: (getDefaultMiddleware) =>
       getDefaultMiddleware({
         thunk: false,
+        serializableCheck: {
+          ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+        },
       }).concat(sagaMiddleware),
     devTools: process.env.NODE_ENV !== 'production',
     enhancers: (defaultEnhancers) => new Tuple(composedEnhancers, ...defaultEnhancers()),

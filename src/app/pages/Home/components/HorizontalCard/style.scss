@@ -1,0 +1,69 @@
+.feature-item {
+	display: flex;
+	padding: 2rem;
+
+	svg {
+		width: 100px;
+		height: 100px;
+	}
+
+	&-content {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		margin-left: 2rem;
+
+		.cat-image {
+			width: 300px;
+		}
+
+		.button-group {
+			display: flex;
+			gap: 1rem;
+			margin-top: 1rem;
+
+			a,
+			button {
+				margin-top: 0;
+			}
+		}
+
+		a {
+			margin-top: 1rem;
+			cursor: pointer;
+			border: none;
+			background-color: transparent;
+			padding: 0.75rem 1.5rem;
+			color: var(--text);
+			font-family: inherit;
+			font-size: inherit;
+			text-decoration: none;
+			border-radius: 8px;
+			border: 1px solid rgb(93 93 93 / 10%);
+			align-self: flex-start;
+
+			&:hover {
+				background-color: rgb(93 93 93 / 10%);
+			}
+		}
+
+		.dispatch-button {
+			margin-top: 0.5rem;
+			cursor: pointer;
+			border: none;
+			background-color: var(--primary);
+			padding: 0.75rem 1.5rem;
+			color: white;
+			font-family: inherit;
+			font-size: inherit;
+			border-radius: 8px;
+			border: 1px solid rgb(93 93 93 / 10%);
+			align-self: flex-start;
+
+			&.delete-button {
+				background-color: rgb(251, 63, 63);
+				margin-left: 1rem;
+			}
+		}
+	}
+}

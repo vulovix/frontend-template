@@ -1,0 +1,27 @@
+header.header {
+  .container {
+    color: var(--text);
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  h2 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text);
+  }
+
+  .nav-items {
+    display: flex;
+    gap: 2rem;
+
+    a,
+    a:visited,
+    a:hover,
+    a:active {
+      text-decoration: none;
+      color: var(--primary);
+    }
+  }
+}

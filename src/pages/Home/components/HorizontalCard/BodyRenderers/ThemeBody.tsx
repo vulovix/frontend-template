@@ -1,19 +1,15 @@
-import { useThemeActions } from 'providers/Theme/slice';
-import { useDetectTheme } from 'providers/Theme/useDetectTheme';
-import { useDispatch } from 'libs/slice';
+import { useMantineColorScheme } from '@mantine/core';
 
 export default function ThemeBody(): JSX.Element {
-  const actions = useThemeActions();
-  const dispatch = useDispatch();
-  const { opositeTheme } = useDetectTheme();
-
+  const { toggleColorScheme, colorScheme } = useMantineColorScheme();
+  const opositeTheme = colorScheme === 'dark' ? 'light' : 'dark';
   return (
     <>
       <h2>Theme</h2>
       <p>With our Theme provider you can easely switch between system, dark or light themes.</p>
 
       <div className="button-group">
-        <button className="dispatch-button" onClick={() => dispatch(actions.changeTheme(opositeTheme))}>
+        <button className="dispatch-button" onClick={() => toggleColorScheme()}>
           Change theme to: {opositeTheme}
         </button>
       </div>

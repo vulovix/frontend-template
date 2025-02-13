@@ -24,6 +24,3 @@ yarn run dev
 
 
 ```
-
-Service = Reducer
-repository = saga lol

@@ -3,12 +3,12 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react';
 
-import { ThemeProvider } from 'providers/Theme';
 import { ReduxProvider } from 'libs/slice';
 import { IntlProvider, defaultLocale, translationMessages } from 'libs/translations';
 import setupStore from 'libs/slice/setupStore';
 
 import App from './App';
+import { MantineThemeProvider } from 'providers/MantineTheme';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement!);
@@ -21,9 +21,9 @@ root.render(
       <IntlProvider locale={defaultLocale} defaultLocale={defaultLocale} messages={translationMessages}>
         <BrowserRouter>
           <StrictMode>
-            <ThemeProvider>
+            <MantineThemeProvider>
               <App />
-            </ThemeProvider>
+            </MantineThemeProvider>
           </StrictMode>
         </BrowserRouter>
       </IntlProvider>

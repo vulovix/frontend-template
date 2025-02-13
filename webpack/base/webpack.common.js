@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CircularDependencyPlugin = require('circular-dependency-plugin');
-const CopyWebpackPlugin = require("copy-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   // to automatically finds the local tsconfig
@@ -35,9 +35,7 @@ module.exports = {
       failOnError: true,
     }),
     new CopyWebpackPlugin({
-      patterns: [
-          { from: 'static' }
-      ]
+      patterns: [{ from: 'static' }],
     }),
   ],
   module: {
@@ -68,6 +66,21 @@ module.exports = {
           'style-loader',
           // Translates CSS into CommonJS
           'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    'postcss-preset-env',
+                    {
+                      // Options
+                    },
+                  ],
+                ],
+              },
+            },
+          },
         ],
       },
       {

@@ -1,11 +1,11 @@
 import { Box, Button, Image, Modal, SimpleGrid, Title } from '@mantine/core';
 import { useDidUpdate, useDisclosure } from '@mantine/hooks';
-import saga from './saga';
-import { selectPersistedImageLoading, selectPersistedImageUrl } from './selectors';
-import { actions } from './slice';
 import { useAppDispatch, useAppSelector } from 'libs/redux/hooks';
 import { useInjectSaga } from 'redux-injectors';
 import { PERSISTED_SCOPE } from './constants';
+import saga from './saga';
+import { selectPersistedImageLoading, selectPersistedImageUrl } from './selectors';
+import { actions } from './slice';
 
 export function CatDisplayPersisted() {
   useInjectSaga({ key: PERSISTED_SCOPE, saga });

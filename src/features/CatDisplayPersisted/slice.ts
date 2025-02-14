@@ -1,7 +1,7 @@
+import { createSlice } from '@reduxjs/toolkit';
 import createPersistedSlice from 'libs/redux/createPersistedSlice';
 import { PERSISTED_SCOPE } from './constants';
 import { IPersistedState } from './types';
-import { createSlice } from '@reduxjs/toolkit';
 
 export const initialState: IPersistedState = {
   loading: false,

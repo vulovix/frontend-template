@@ -1,7 +1,7 @@
-import { request, makeGetReq } from 'packages/request';
+import { makeGetReq, request } from 'packages/request';
 
-import { actions } from './slice';
 import { call, put, takeLatest } from 'redux-saga/effects';
+import { actions } from './slice';
 
 export function* handleGetCatImage(): any {
   const url = '/catapi/v1/images/search';

@@ -1,10 +1,10 @@
-import { configureStore, Reducer, combineReducers, Tuple } from '@reduxjs/toolkit';
-import createSagaMiddleware from 'redux-saga';
-import { createInjectorsEnhancer } from 'redux-injectors';
+import { combineReducers, configureStore, Reducer, Tuple } from '@reduxjs/toolkit';
 import { compose, StoreEnhancer } from 'redux';
-import rootSaga from './saga';
-import { persistStore, FLUSH, PAUSE, PERSIST, PURGE, REGISTER, REHYDRATE } from 'redux-persist';
+import { createInjectorsEnhancer } from 'redux-injectors';
+import { FLUSH, PAUSE, PERSIST, persistStore, PURGE, REGISTER, REHYDRATE } from 'redux-persist';
+import createSagaMiddleware from 'redux-saga';
 import rootReducer from './reducer';
+import rootSaga from './saga';
 
 // Create the saga middleware
 const sagaMiddleware = createSagaMiddleware();

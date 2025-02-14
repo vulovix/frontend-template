@@ -15,20 +15,11 @@ export function Hero() {
         </h1>
 
         <Text className={'description'} c="dimmed">
-          Build fully featured accessible web applications with ease with help of React Router, Redux Toolkit, Redux
-          Saga, React Intl, Mantine UI and SCSS.
+          Build fully featured accessible web applications with ease with help of React Router, Redux Toolkit, Redux Saga, React Intl, Mantine UI and SCSS.
         </Text>
 
         <Group className={'controls'}>
-          <Button
-            component="a"
-            href="https://github.com/vulovix/frontend-template"
-            size="xl"
-            variant="default"
-            className={'control'}
-            target="_blank"
-            leftSection={<VscGithub size={20} />}
-          >
+          <Button component="a" href="https://github.com/vulovix/frontend-template" size="xl" variant="default" className={'control'} target="_blank" leftSection={<VscGithub size={20} />}>
             GitHub
           </Button>
         </Group>

@@ -1,8 +1,8 @@
-import { Burger, Center, Container, Group, Image, Menu, Stack, useMantineColorScheme } from '@mantine/core';
+import { Burger, Center, Container, Group, Image, Menu, Stack } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
+import { useEffect } from 'react';
 import { VscChevronDown } from 'react-icons/vsc';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
 import './Header';
 
 export interface Link {

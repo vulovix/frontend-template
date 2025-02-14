@@ -2,17 +2,17 @@
 
 .language-picker-wrapper {
   .control {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
-    margin: var(--mantine-spacing-xs) 0;
-    border-radius: var(--mantine-radius-md);
-    border: 1px solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-6));
     transition: background-color 150ms ease;
+    margin: var(--mantine-spacing-xs) 0;
+    border: 1px solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-6));
+    border-radius: var(--mantine-radius-md);
     // background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-6));
     background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-5));
+    padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+    width: 100%;
 
     &[data-expanded] {
       background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-5));
@@ -29,8 +29,8 @@
   }
 
   .icon {
-    transition: transform 150ms ease;
     transform: rotate(0deg);
+    transition: transform 150ms ease;
 
     [data-expanded] & {
       transform: rotate(180deg);

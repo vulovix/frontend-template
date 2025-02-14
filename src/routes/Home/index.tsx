@@ -1,6 +1,6 @@
+import { Container } from '@mantine/core';
 import { Features } from 'components/Features/Features';
 import { Hero } from 'components/Hero/Hero';
-import { Container } from '@mantine/core';
 import { JSX } from 'react';
 import './style';
 

@@ -1,38 +1,33 @@
 import { Badge, Box, Card, Container, Group, SimpleGrid, Text, Title, useMantineTheme } from '@mantine/core';
-import { SiReactrouter, SiReduxsaga, SiWebpack } from 'react-icons/si';
-import { BiLogoRedux } from 'react-icons/bi';
-import { TbBrandMantine } from 'react-icons/tb';
-import { SiI18Next } from 'react-icons/si';
-import { LanguagePicker } from 'features/LanguagePicker/LanguagePicker';
-import { FormattedMessage } from 'react-intl';
 import { CatDisplay } from 'features/CatDisplay/CatDisplay';
 import { CatDisplayPersisted } from 'features/CatDisplayPersisted/CatDisplayPersisted';
+import { LanguagePicker } from 'features/LanguagePicker/LanguagePicker';
+import { BiLogoRedux } from 'react-icons/bi';
+import { SiI18Next, SiReactrouter, SiReduxsaga, SiWebpack } from 'react-icons/si';
+import { TbBrandMantine } from 'react-icons/tb';
+import { FormattedMessage } from 'react-intl';
 import './Features';
 
 const mockdata = [
   {
     title: 'Webpack Configuration',
-    description:
-      'A custom configuration written to improve chunking, code splitting and overall development experience with HMR, proxying and more.',
+    description: 'A custom configuration written to improve chunking, code splitting and overall development experience with HMR, proxying and more.',
     icon: SiWebpack,
   },
   {
     title: 'React Router',
-    description:
-      'With React Router built-in, you can easily create a single page application and have a clean and simple navigation experience.',
+    description: 'With React Router built-in, you can easily create a single page application and have a clean and simple navigation experience.',
     icon: SiReactrouter,
   },
   {
     title: 'Redux Saga',
-    description:
-      'We use Redux Saga to handle asynchronous actions. Most commonly used for data fetching and then storing data in the store.',
+    description: 'We use Redux Saga to handle asynchronous actions. Most commonly used for data fetching and then storing data in the store.',
     icon: SiReduxsaga,
     example: CatDisplay,
   },
   {
     title: 'Redux Persist',
-    description:
-      'We use Redux Persist to cache data to storage. When refreshed data will be loaded imidiately before running our App component.',
+    description: 'We use Redux Persist to cache data to storage. When refreshed data will be loaded imidiately before running our App component.',
     icon: BiLogoRedux,
     example: CatDisplayPersisted,
   },

@@ -1,9 +1,13 @@
 {
-  "printWidth": 120,
+  "printWidth": 200,
   "tabWidth": 2,
   "useTabs": false,
   "semi": true,
   "singleQuote": true,
   "trailingComma": "all",
-  "endOfLine": "auto"
+  "endOfLine": "auto",
+  "plugins": [
+    "prettier-plugin-organize-imports",
+    "prettier-plugin-css-order"
+  ]
 }

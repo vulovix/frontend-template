@@ -1,12 +1,12 @@
-import { useEffect } from 'react';
-import { useDisclosure } from '@mantine/hooks';
 import { Box, Button, Image, Modal, Title } from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
 import { CATCONTROLLER_SCOPE } from 'features/CatDisplay/constants';
-import { selectCatImageLoading, selectCatImageUrl } from './selectors';
-import { useInjectReducer, useInjectSaga } from 'redux-injectors';
 import { useAppDispatch, useAppSelector } from 'libs/redux/hooks';
-import { actions, reducer } from './slice';
+import { useEffect } from 'react';
+import { useInjectReducer, useInjectSaga } from 'redux-injectors';
 import saga from './saga';
+import { selectCatImageLoading, selectCatImageUrl } from './selectors';
+import { actions, reducer } from './slice';
 
 export function CatDisplay() {
   useInjectReducer({ key: CATCONTROLLER_SCOPE, reducer });

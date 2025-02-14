@@ -20,12 +20,12 @@ module.exports = merge(baseProductionConfiguration, localCommonConfiguration, {
           test: /[\\/]node_modules[\\/](react)[\\/]/,
           name: 'npm.react',
         },
-        'reactoso-ui': {
-          reuseExistingChunk: false,
-          enforce: true,
-          test: /[\\/]packages[\\/]ui[\\/]/,
-          name: 'reactoso-ui',
-        },
+        // 'reactoso-ui': {
+        //   reuseExistingChunk: false,
+        //   enforce: true,
+        //   test: /[\\/]packages[\\/]ui[\\/]/,
+        //   name: 'reactoso-ui',
+        // },
         vendor: {
           test: /[\\/]node_modules[\\/]/,
           name(module) {

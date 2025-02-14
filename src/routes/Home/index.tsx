@@ -2,10 +2,7 @@ import { Features } from 'components/Features/Features';
 import { Hero } from 'components/Hero/Hero';
 import { Container } from '@mantine/core';
 import { JSX } from 'react';
-import './style.scss';
-import { useInjectSaga } from 'redux-injectors';
-import { CATCONTROLLER_SCOPE } from 'features/CatDisplay/constants';
-import catSaga from 'features/CatDisplay/saga';
+import './style';
 
 export default function Page(): JSX.Element {
   return (

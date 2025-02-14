@@ -7,7 +7,7 @@ import { LanguagePicker } from 'features/LanguagePicker/LanguagePicker';
 import { FormattedMessage } from 'react-intl';
 import { CatDisplay } from 'features/CatDisplay/CatDisplay';
 import { CatDisplayPersisted } from 'features/CatDisplayPersisted/CatDisplayPersisted';
-import './Features.scss';
+import './Features';
 
 const mockdata = [
   {

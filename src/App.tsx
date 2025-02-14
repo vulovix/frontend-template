@@ -1,13 +1,12 @@
 import { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import AboutPage from 'routes/About';
 import HomePage from 'routes/Home';
-
-import './style.scss';
+import AboutPage from 'routes/About';
+import { Container } from '@mantine/core';
 import { Header } from 'components/Header/Header';
 import { Footer } from 'components/Footer/Footer';
-import { Container } from '@mantine/core';
+import './style';
 
 const Loading = (): JSX.Element => <span>Loading...</span>;
 

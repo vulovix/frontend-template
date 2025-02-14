@@ -1,6 +1,6 @@
 import { Button, Container, Group, Text } from '@mantine/core';
 import { VscGithub } from 'react-icons/vsc';
-import './Hero';
+import './Hero.scss';
 
 export function Hero() {
   return (

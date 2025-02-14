@@ -3,7 +3,7 @@ import { useDisclosure } from '@mantine/hooks';
 import { useEffect } from 'react';
 import { VscChevronDown } from 'react-icons/vsc';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
-import './Header';
+import './Header.scss';
 
 export interface Link {
   link: string;

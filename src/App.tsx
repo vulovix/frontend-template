@@ -6,7 +6,7 @@ import { Footer } from 'components/Footer/Footer';
 import { Header } from 'components/Header/Header';
 import AboutPage from 'routes/About';
 import HomePage from 'routes/Home';
-import './style';
+import './style.scss';
 
 const Loading = (): JSX.Element => <span>Loading...</span>;
 

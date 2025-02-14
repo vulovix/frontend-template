@@ -10,7 +10,7 @@ module.exports = {
 
   resolve: {
     // That's what allow us to leave off the file extension when importing (import { something } from './file')
-    extensions: ['.ts', '.tsx', '.js', '.jsx', '.css', '.scss'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
   output: {
     publicPath: '/',

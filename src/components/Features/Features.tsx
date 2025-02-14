@@ -6,7 +6,7 @@ import { BiLogoRedux } from 'react-icons/bi';
 import { SiI18Next, SiReactrouter, SiReduxsaga, SiWebpack } from 'react-icons/si';
 import { TbBrandMantine } from 'react-icons/tb';
 import { FormattedMessage } from 'react-intl';
-import './Features';
+import './Features.scss';
 
 const mockdata = [
   {

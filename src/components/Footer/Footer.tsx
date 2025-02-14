@@ -1,6 +1,6 @@
 import { ActionIcon, Container, Group, Image } from '@mantine/core';
 import { VscGithub, VscTwitter } from 'react-icons/vsc';
-import './Footer';
+import './Footer.scss';
 
 export function Footer() {
   return (

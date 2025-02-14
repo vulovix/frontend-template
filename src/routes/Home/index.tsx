@@ -2,7 +2,7 @@ import { Container } from '@mantine/core';
 import { Features } from 'components/Features/Features';
 import { Hero } from 'components/Hero/Hero';
 import { JSX } from 'react';
-import './style';
+import './style.scss';
 
 export default function Page(): JSX.Element {
   return (

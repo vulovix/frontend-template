@@ -2,28 +2,34 @@
 
 Starter Project
 
-- [x] Custom webpack configuration
-- React router
-- Multi packages with possiblity to pack each package separately
-- Redux toolkit
-- Redux saga
-- Localization
-- Notifications
-- Configuration
-- Automatic Deployments
+- [x] React Router
+- [x] Redux Toolkit
+- [x] Redux Persist
+- [x] Redux Saga
+- [x] SCSS support
+  - Use SCSS alongside UI library
+- [x] Localization
+  - Support Multiple Languages
+  - This template comes with English and German
+- [x] Multiple Environments
+  - Separate webpack configuration for your dev and production mode
+- [x] Code Splitting
+  - Manage chunks the way you want
 
 # Development
 
-```sh
-
-# install dependencies
+```bash
+# Install Dependencies
 yarn
-
-# run development version
-yarn run dev
-
-
+# Run Development Version
+yarn start
 ```
 
-Service = Reducer
-repository = saga lol
+# Build
+
+```bash
+# Build Your App
+yarn build
+# Preview Production Version
+yarn serve
+```

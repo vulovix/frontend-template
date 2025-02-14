@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CircularDependencyPlugin = require('circular-dependency-plugin');
-const CopyWebpackPlugin = require("copy-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   // to automatically finds the local tsconfig
@@ -10,7 +10,7 @@ module.exports = {
 
   resolve: {
     // That's what allow us to leave off the file extension when importing (import { something } from './file')
-    extensions: ['.ts', '.tsx', '.js'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
   output: {
     publicPath: '/',
@@ -35,9 +35,7 @@ module.exports = {
       failOnError: true,
     }),
     new CopyWebpackPlugin({
-      patterns: [
-          { from: 'static' }
-      ]
+      patterns: [{ from: 'static' }],
     }),
   ],
   module: {
@@ -62,24 +60,12 @@ module.exports = {
         ],
       },
       {
-        test: /\.css$/i,
-        use: [
-          // Creates `style` nodes from JS strings
-          'style-loader',
-          // Translates CSS into CommonJS
-          'css-loader',
-        ],
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.s[ac]ss$/i,
-        use: [
-          // Creates `style` nodes from JS strings
-          'style-loader',
-          // Translates CSS into CommonJS
-          'css-loader',
-          // Compiles Sass to CSS
-          'sass-loader',
-        ],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },

@@ -35,7 +35,7 @@ module.exports = {
       failOnError: true,
     }),
     new CopyWebpackPlugin({
-      patterns: [{ from: 'static' }],
+      patterns: [{ from: 'public' }],
     }),
   ],
   module: {

@@ -1,5 +1,5 @@
 import { Box, Group, Image, Menu, UnstyledButton } from '@mantine/core';
-import { useLanguageProvider } from 'packages/intl';
+import { useLanguageProvider } from 'providers/Language';
 import { useEffect, useState } from 'react';
 import { VscArrowDown } from 'react-icons/vsc';
 import './LanguagePicker.scss';
@@ -12,9 +12,9 @@ const data = [
 export function LanguagePicker() {
   const [opened, setOpened] = useState(false);
   const [selected, setSelected] = useState(data[0]);
-  const { locale, changeLocale } = useLanguageProvider();
+  const { setLocale } = useLanguageProvider();
   useEffect(() => {
-    changeLocale(selected.id);
+    setLocale(selected.id);
   }, [selected]);
   const items = data.map((item) => (
     <Menu.Item leftSection={<Image src={item.image} width={18} height={18} />} onClick={() => setSelected(item)} key={item.label}>

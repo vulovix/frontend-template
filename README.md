@@ -8,7 +8,7 @@ Starter Project
 - [x] Redux Saga
 - [x] SCSS support
   - Use SCSS alongside UI library
-- [x] Localization
+- [x] Internationalization
   - Support Multiple Languages
   - This template comes with English and German
 - [x] Multiple Environments

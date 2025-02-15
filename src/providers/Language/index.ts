@@ -1,6 +1,3 @@
-/* eslint-disable no-restricted-imports */
-export { default as IntlProvider } from './IntlProvider';
-export { formatTranslationMessages } from './utils';
 export {
   FormattedDate,
   FormattedDateParts,
@@ -15,9 +12,11 @@ export {
   FormattedRelativeTime,
   FormattedTime,
   FormattedTimeParts,
-  useIntl,
   createIntl,
   injectIntl,
+  useIntl,
 } from 'react-intl';
-
-export { default as useLanguageProvider } from './useIntlProvider';
+export { LanguageProvider } from './LanguageProvider';
+export { useLanguageProvider } from './useLanguageProvider';
+export { useTranslate } from './useTranslate';
+export { formatTranslationMessages } from './utils';

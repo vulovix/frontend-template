@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const flatten = require('./flatten');
 
 export const formatTranslationMessages = (locale: string, messages: any) => {

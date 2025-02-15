@@ -1,5 +1,4 @@
-/* eslint-disable no-restricted-imports */
-import { formatTranslationMessages } from 'packages/intl';
+import { formatTranslationMessages } from 'providers/Language';
 
 import de from './de/translation.json';
 import en from './en/translation.json';
@@ -10,5 +9,3 @@ export const translationMessages = {
   en: formatTranslationMessages('en', en),
   de: formatTranslationMessages('de', de),
 };
-
-export * from 'packages/intl';

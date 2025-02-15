@@ -7,9 +7,9 @@
   "scripts": {
     "clean": "rm ./build/*",
     "check-dependency-updates": "npx npm-check-updates -u",
-    "build": "webpack --config ./webpack/webpack.prod.js",
-    "start": "webpack-dev-server --config ./webpack/webpack.dev.js",
-    "start:production": "webpack-dev-server --config ./webpack/webpack.prod.js --host localhost --port 8080 --open",
+    "build": "webpack --config ./internals/webpack/webpack.production.js",
+    "start": "webpack-dev-server --config ./internals/webpack/webpack.dev.js",
+    "start:production": "webpack-dev-server --config ./internals/webpack/webpack.production.js --host localhost --port 8080 --open",
     "serve": "npx serve -s build",
     "lint": "eslint --fix --ext .js,.ts,.tsx ./src --ignore-path .gitignore",
     "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\""
@@ -44,6 +44,7 @@
     "@typescript-eslint/parser": "^8.24.0",
     "circular-dependency-plugin": "^5.2.2",
     "clean-webpack-plugin": "^4.0.0",
+    "compression-webpack-plugin": "^11.1.0",
     "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^7.1.2",
     "esbuild-loader": "^4.3.0",
@@ -55,8 +56,6 @@
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-testing-library": "^7.1.1",
-    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.6.3",
     "prettier": "^3.5.1",
     "prettier-plugin-css-order": "^2.1.2",
@@ -71,8 +70,6 @@
     "webpack-bundle-analyzer": "^4.10.2",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0",
-    "webpack-hot-middleware": "^2.26.1",
-    "webpack-merge": "^6.0.1",
     "webpackbar": "^7.0.0"
   }
 }

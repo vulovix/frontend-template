@@ -25,7 +25,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       inject: true,
-      template: 'public/index.html',
+      template: 'src/index.html',
     }),
     new webpack.ProvidePlugin({
       React: 'react',
